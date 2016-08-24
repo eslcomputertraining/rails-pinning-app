@@ -186,3 +186,513 @@ Started GET "/assets/ruby-logo-thumbnail-f7feb40a78b146b9f172f8d866e29de8.png" f
 
 
 Started GET "/assets/laptop-background-280277fdcad4c5b6066d8c2814432e86.jpg" for ::1 at 2016-08-23 19:08:52 -0700
+
+
+Started GET "/" for ::1 at 2016-08-24 08:50:31 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (18.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PinsController#index as HTML
+  [1m[35mPin Load (19.1ms)[0m  SELECT "pins".* FROM "pins"
+  Rendered pins/index.erb within layouts/application (48.9ms)
+Completed 200 OK in 148ms (Views: 102.0ms | ActiveRecord: 35.4ms)
+
+
+Started GET "/link%20href%20value" for ::1 at 2016-08-24 08:50:35 -0700
+
+ActionController::RoutingError (No route matches [GET] "/link%20href%20value"):
+  actionpack (4.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.1.2) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.0) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.0) lib/rails/engine.rb:518:in `call'
+  railties (4.2.0) lib/rails/application.rb:164:in `call'
+  rack (1.6.0) lib/rack/tempfile_reaper.rb:15:in `call'
+  rack (1.6.0) lib/rack/lint.rb:49:in `_call'
+  rack (1.6.0) lib/rack/lint.rb:37:in `call'
+  rack (1.6.0) lib/rack/showexceptions.rb:24:in `call'
+  puma (2.11.0) lib/puma/rack_patch.rb:13:in `call'
+  rack (1.6.0) lib/rack/chunked.rb:54:in `call'
+  rack (1.6.0) lib/rack/content_length.rb:15:in `call'
+  puma (2.11.0) lib/puma/server.rb:507:in `handle_request'
+  puma (2.11.0) lib/puma/server.rb:375:in `process_client'
+  puma (2.11.0) lib/puma/server.rb:262:in `block in run'
+  puma (2.11.0) lib/puma/thread_pool.rb:104:in `block in spawn_thread'
+
+
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (12.7ms)
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (91.3ms)
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (48.8ms)
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (108.3ms)
+
+
+Started GET "/" for ::1 at 2016-08-24 09:08:02 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PinsController#index as HTML
+  [1m[35mPin Load (0.5ms)[0m  SELECT "pins".* FROM "pins"
+  Rendered pins/index.erb within layouts/application (32.1ms)
+Completed 500 Internal Server Error in 53ms
+
+ActionView::Template::Error (undefined method `pin_by_name_path' for #<#<Class:0x007ff7808bb9e0>:0x007ff77fa6bcc8>):
+    21:                 
+    22:                 <div class="col-xs-9">
+    23:                 <h4>
+    24:                   <%= link_to "#{pin.title}", pin_by_name_path(slug: pin.slug) %>
+    25:                 </h4>
+    26:                   <%= link_to "Link text", "link href value", html_options = {target: "_blank", class: "url"} %>
+    27:                 </div>
+  app/views/pins/index.erb:24:in `block (2 levels) in _app_views_pins_index_erb__883683689576812842_70350495205420'
+  app/views/pins/index.erb:9:in `each'
+  app/views/pins/index.erb:9:in `block in _app_views_pins_index_erb__883683689576812842_70350495205420'
+  app/views/pins/index.erb:7:in `_app_views_pins_index_erb__883683689576812842_70350495205420'
+
+
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.0ms)
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.7ms)
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (59.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (43.1ms)
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (102.7ms)
+
+
+Started GET "/" for ::1 at 2016-08-24 09:10:44 -0700
+Processing by PinsController#index as HTML
+  [1m[36mPin Load (0.4ms)[0m  [1mSELECT "pins".* FROM "pins"[0m
+  Rendered pins/index.erb within layouts/application (23.7ms)
+Completed 500 Internal Server Error in 29ms
+
+ActionView::Template::Error (undefined method `pin_by_name_path' for #<#<Class:0x007ff7808bb9e0>:0x007ff780b4c808>):
+    21:                 
+    22:                 <div class="col-xs-9">
+    23:                 <h4>
+    24:                   <a href="<%= link_to "#{pin.title}", pin_by_name_path(slug: pin.slug) %>">
+    25:                   <%= "#{pin.title}" %>
+    26:                   </a>
+    27:                 </h4>
+  app/views/pins/index.erb:24:in `block (2 levels) in _app_views_pins_index_erb__883683689576812842_70350474269740'
+  app/views/pins/index.erb:9:in `each'
+  app/views/pins/index.erb:9:in `block in _app_views_pins_index_erb__883683689576812842_70350474269740'
+  app/views/pins/index.erb:7:in `_app_views_pins_index_erb__883683689576812842_70350474269740'
+
+
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.9ms)
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.0ms)
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (57.2ms)
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (42.6ms)
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (95.5ms)
+
+
+Started GET "/" for ::1 at 2016-08-24 11:15:05 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+	bin/rake db:migrate RAILS_ENV=development
+
+):
+  activerecord (4.2.0) lib/active_record/migration.rb:393:in `check_pending!'
+  activerecord (4.2.0) lib/active_record/migration.rb:374:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:88:in `_run_callbacks'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:734:in `_run_call_callbacks'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.0) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.1.2) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.0) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.0) lib/rails/engine.rb:518:in `call'
+  railties (4.2.0) lib/rails/application.rb:164:in `call'
+  rack (1.6.0) lib/rack/tempfile_reaper.rb:15:in `call'
+  rack (1.6.0) lib/rack/lint.rb:49:in `_call'
+  rack (1.6.0) lib/rack/lint.rb:37:in `call'
+  rack (1.6.0) lib/rack/showexceptions.rb:24:in `call'
+  puma (2.11.0) lib/puma/rack_patch.rb:13:in `call'
+  rack (1.6.0) lib/rack/chunked.rb:54:in `call'
+  rack (1.6.0) lib/rack/content_length.rb:15:in `call'
+  puma (2.11.0) lib/puma/server.rb:507:in `handle_request'
+  puma (2.11.0) lib/puma/server.rb:375:in `process_client'
+  puma (2.11.0) lib/puma/server.rb:262:in `block in run'
+  puma (2.11.0) lib/puma/thread_pool.rb:104:in `block in spawn_thread'
+
+
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.6ms)
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (55.7ms)
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (51.5ms)
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (108.7ms)
+
+
+Started GET "/" for ::1 at 2016-08-24 11:51:41 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+	bin/rake db:migrate RAILS_ENV=development
+
+):
+  activerecord (4.2.0) lib/active_record/migration.rb:393:in `check_pending!'
+  activerecord (4.2.0) lib/active_record/migration.rb:374:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:88:in `_run_callbacks'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:734:in `_run_call_callbacks'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.0) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.1.2) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.0) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.0) lib/rails/engine.rb:518:in `call'
+  railties (4.2.0) lib/rails/application.rb:164:in `call'
+  rack (1.6.0) lib/rack/tempfile_reaper.rb:15:in `call'
+  rack (1.6.0) lib/rack/lint.rb:49:in `_call'
+  rack (1.6.0) lib/rack/lint.rb:37:in `call'
+  rack (1.6.0) lib/rack/showexceptions.rb:24:in `call'
+  puma (2.11.0) lib/puma/rack_patch.rb:13:in `call'
+  rack (1.6.0) lib/rack/chunked.rb:54:in `call'
+  rack (1.6.0) lib/rack/content_length.rb:15:in `call'
+  puma (2.11.0) lib/puma/server.rb:507:in `handle_request'
+  puma (2.11.0) lib/puma/server.rb:375:in `process_client'
+  puma (2.11.0) lib/puma/server.rb:262:in `block in run'
+  puma (2.11.0) lib/puma/thread_pool.rb:104:in `block in spawn_thread'
+
+
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.6ms)
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (50.6ms)
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (43.9ms)
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (100.2ms)
+
+
+Started GET "/pins/name-ruby-monk" for ::1 at 2016-08-24 11:51:48 -0700
+  [1m[35mActiveRecord::SchemaMigration Load (0.4ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+	bin/rake db:migrate RAILS_ENV=development
+
+):
+  activerecord (4.2.0) lib/active_record/migration.rb:393:in `check_pending!'
+  activerecord (4.2.0) lib/active_record/migration.rb:374:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:88:in `_run_callbacks'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:734:in `_run_call_callbacks'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.0) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.1.2) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.0) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.0) lib/rails/engine.rb:518:in `call'
+  railties (4.2.0) lib/rails/application.rb:164:in `call'
+  rack (1.6.0) lib/rack/tempfile_reaper.rb:15:in `call'
+  rack (1.6.0) lib/rack/lint.rb:49:in `_call'
+  rack (1.6.0) lib/rack/lint.rb:37:in `call'
+  rack (1.6.0) lib/rack/showexceptions.rb:24:in `call'
+  puma (2.11.0) lib/puma/rack_patch.rb:13:in `call'
+  rack (1.6.0) lib/rack/chunked.rb:54:in `call'
+  rack (1.6.0) lib/rack/content_length.rb:15:in `call'
+  puma (2.11.0) lib/puma/server.rb:507:in `handle_request'
+  puma (2.11.0) lib/puma/server.rb:375:in `process_client'
+  puma (2.11.0) lib/puma/server.rb:262:in `block in run'
+  puma (2.11.0) lib/puma/thread_pool.rb:104:in `block in spawn_thread'
+
+
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (52.5ms)
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.2ms)
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (42.1ms)
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (93.3ms)
+
+
+Started GET "/pins/name-ruby-monk" for ::1 at 2016-08-24 11:52:27 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+	bin/rake db:migrate RAILS_ENV=development
+
+):
+  activerecord (4.2.0) lib/active_record/migration.rb:393:in `check_pending!'
+  activerecord (4.2.0) lib/active_record/migration.rb:374:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:88:in `_run_callbacks'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:734:in `_run_call_callbacks'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.0) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.1.2) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.0) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.0) lib/rails/engine.rb:518:in `call'
+  railties (4.2.0) lib/rails/application.rb:164:in `call'
+  rack (1.6.0) lib/rack/tempfile_reaper.rb:15:in `call'
+  rack (1.6.0) lib/rack/lint.rb:49:in `_call'
+  rack (1.6.0) lib/rack/lint.rb:37:in `call'
+  rack (1.6.0) lib/rack/showexceptions.rb:24:in `call'
+  puma (2.11.0) lib/puma/rack_patch.rb:13:in `call'
+  rack (1.6.0) lib/rack/chunked.rb:54:in `call'
+  rack (1.6.0) lib/rack/content_length.rb:15:in `call'
+  puma (2.11.0) lib/puma/server.rb:507:in `handle_request'
+  puma (2.11.0) lib/puma/server.rb:375:in `process_client'
+  puma (2.11.0) lib/puma/server.rb:262:in `block in run'
+  puma (2.11.0) lib/puma/thread_pool.rb:104:in `block in spawn_thread'
+
+
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.6ms)
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (50.6ms)
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (43.3ms)
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (97.8ms)
+
+
+Started GET "/pins/name-ruby-monk" for ::1 at 2016-08-24 11:53:36 -0700
+  [1m[35mActiveRecord::SchemaMigration Load (0.4ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+	bin/rake db:migrate RAILS_ENV=development
+
+):
+  activerecord (4.2.0) lib/active_record/migration.rb:393:in `check_pending!'
+  activerecord (4.2.0) lib/active_record/migration.rb:374:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:88:in `_run_callbacks'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:734:in `_run_call_callbacks'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.0) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.1.2) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.0) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.0) lib/rails/engine.rb:518:in `call'
+  railties (4.2.0) lib/rails/application.rb:164:in `call'
+  rack (1.6.0) lib/rack/tempfile_reaper.rb:15:in `call'
+  rack (1.6.0) lib/rack/lint.rb:49:in `_call'
+  rack (1.6.0) lib/rack/lint.rb:37:in `call'
+  rack (1.6.0) lib/rack/showexceptions.rb:24:in `call'
+  puma (2.11.0) lib/puma/rack_patch.rb:13:in `call'
+  rack (1.6.0) lib/rack/chunked.rb:54:in `call'
+  rack (1.6.0) lib/rack/content_length.rb:15:in `call'
+  puma (2.11.0) lib/puma/server.rb:507:in `handle_request'
+  puma (2.11.0) lib/puma/server.rb:375:in `process_client'
+  puma (2.11.0) lib/puma/server.rb:262:in `block in run'
+  puma (2.11.0) lib/puma/thread_pool.rb:104:in `block in spawn_thread'
+
+
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.9ms)
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (50.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (43.1ms)
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (98.7ms)
+
+
+Started GET "/" for ::1 at 2016-08-24 11:53:40 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+	bin/rake db:migrate RAILS_ENV=development
+
+):
+  activerecord (4.2.0) lib/active_record/migration.rb:393:in `check_pending!'
+  activerecord (4.2.0) lib/active_record/migration.rb:374:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:88:in `_run_callbacks'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:734:in `_run_call_callbacks'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.0) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.1.2) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.0) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.0) lib/rails/engine.rb:518:in `call'
+  railties (4.2.0) lib/rails/application.rb:164:in `call'
+  rack (1.6.0) lib/rack/tempfile_reaper.rb:15:in `call'
+  rack (1.6.0) lib/rack/lint.rb:49:in `_call'
+  rack (1.6.0) lib/rack/lint.rb:37:in `call'
+  rack (1.6.0) lib/rack/showexceptions.rb:24:in `call'
+  puma (2.11.0) lib/puma/rack_patch.rb:13:in `call'
+  rack (1.6.0) lib/rack/chunked.rb:54:in `call'
+  rack (1.6.0) lib/rack/content_length.rb:15:in `call'
+  puma (2.11.0) lib/puma/server.rb:507:in `handle_request'
+  puma (2.11.0) lib/puma/server.rb:375:in `process_client'
+  puma (2.11.0) lib/puma/server.rb:262:in `block in run'
+  puma (2.11.0) lib/puma/thread_pool.rb:104:in `block in spawn_thread'
+
+
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.7ms)
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (49.5ms)
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (42.5ms)
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (99.2ms)

@@ -1,18 +1,18 @@
 Rails.application.routes.draw do
-  resources :followers, except: [:edit, :update, :show]
-  resources :boards
-  resources :users 
+  #resources :followers, except: [:edit, :update, :show]
+  #resources :boards
+  #resources :users 
 
   root 'pins#index'
     get 'pins/name-:slug' => 'pins#show_by_name', as: 'pin_by_name'
     
-    get 'signup' => "users#new", as: :signup
+    #get 'signup' => "users#new", as: :signup
     
-    get 'login' => "users#login", as: :login
+    #get 'login' => "users#login", as: :login
     
-    post '/login' => "users#authenticate"
+    #post '/login' => "users#authenticate"
     
-    delete '/logout/:id' => "users#logout", as: :logout
+    #delete '/logout/:id' => "users#logout", as: :logout
     
     resources :pins
     

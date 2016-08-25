@@ -1,6 +1,7 @@
-body {
-  background: url(asset_path('laptop-background.jpg')) no-repeat;
-} 
+body{
+  background: url(asset-path('laptop-background.jpg')) no-repeat;
+  background-size:cover;
+}
 
 a {
   color: #dd5566;
@@ -25,4 +26,10 @@ h1 {
 }
 hr{
   clear:both;
+}
+
+.bottom-align{
+  position: relative;
+  bottom: 0;
+  margin-top:25px;
 }

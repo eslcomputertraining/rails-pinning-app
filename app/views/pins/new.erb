@@ -1,0 +1,19 @@
+<div class="header">
+  <h1>Pins</h1>
+</div>
+<hr/>
+<div class="panel panel-default">
+  <div class="panel-heading">Add New Pin</div>
+  <div class="panel-body">
+	<% if !@errors.nil? %>
+		<div class="alert alert-danger" role="alert"><p><b><%= pluralize(@errors.count, "error") %> prohibited this pin from being saved:</b></p>
+			<ul>
+				<% @errors.full_messages.each do |msg| %>
+					<li><%= msg %></li>
+				<% end %>
+			</ul>
+		</div>
+	<% end %>
+	<%= render "form" %>
+  </div>
+ </div>

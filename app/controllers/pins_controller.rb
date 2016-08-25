@@ -6,6 +6,7 @@ class PinsController < ApplicationController
   
   def show
     @pin = Pin.find(params[:id])
+    @pins = Pin.all 
   end
   
   def show_by_name

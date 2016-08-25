@@ -1,7 +1,7 @@
 require 'spec_helper'
 
 
-RSpec.describe "GET index" do
+RSpec.describe PinsController do
       it 'renders the index template' do
         get :index
         expect(response).to render_template("index")
@@ -10,6 +10,6 @@ RSpec.describe "GET index" do
      it 'populates @pins with all pins' do 
      	get :index
       expect(assigns[:pins]).to eq(Pin.all)
-   end
+   	 end
    
 end

@@ -1,7 +1,4 @@
-<div class="header">
-  <h1>Welcome 'lil Ninjas and Sensei's. Today, You will Learn Ruby on Rails.</h1>
-  <h3>Below is Your Training Course.</h3>
-</div>
+
 <hr/>
 <div class="pin">
   <% @pins.each_slice(3) do |row| %>
@@ -12,20 +9,24 @@
             <div class="pin-header row">
               
               <div class="logo-thumbnail col-xs-3">
-                  <% if "#{pin.resource_type}" == "rails" %>
-                  <%= image_tag('rails-logo-thumbnail.png') %>
-                  <% elsif "#{pin.resource_type}" == "ruby" %>
-                  <%= image_tag('ruby-logo-thumbnail.png') %>                
+                  <% if pin.slug.include?("monk") %>
+                    <%= image_tag('buddha.png') %>
+                  <% elsif pin.slug.include?("ruby") %>
+                    <%= image_tag('ruby-logo-thumbnail.png') %>
+                  <% else %>
+                    <%= image_tag('rails-logo-thumbnail.png') %>
                   <% end %>
                 </div>  
                 
                 <div class="col-xs-9">
                 <h4>
-                  <a href="<%= link_to "#{pin.title}", pin_by_name_path(slug: pin.slug) %>">
+                  <a href="<%= pin_by_name_path(slug: pin.slug) %>">
                   <%= "#{pin.title}" %>
                   </a>
                 </h4>
-                  <%= link_to "Link text", "link href value", html_options = {target: "_blank", class: "url"} %>
+                  <a class="url" href="<%= "#{pin.url}" %>" target="_blank">
+                    <%= "#{pin.url.truncate(30)}" %>
+                  </a>
                 </div>
                 
             </div>

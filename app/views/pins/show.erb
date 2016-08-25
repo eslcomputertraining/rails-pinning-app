@@ -1,47 +1,19 @@
-<div class="header">
-  <h1>Learn to be Kick-Ass Using Ruby on Rails. Go Rockstars!
-    <i class="fa fa-laptop"></i>
-    <%= "#{@pin.title}" %>
-  </h1>
-  <h3>Resources for Beginner Ninja's and Reminders for Sensei's!</h3>
-</div>
-<hr/>
-<div class="pin">
-  <% @pins.each_slice(3) do |row| %>
-    <div class="row">
-      <% row.each do |pin| %>      
-        <div class="pin-container col-md-4">
-          <div class="pin">
-            <div class="pin-header row">
-              
-              <div class="logo-thumbnail col-xs-3">
-                  <% if "#{pin.resource_type}" == "rails" %>
-                  <%= image_tag('rails-logo-thumbnail.png') %>
-                  <% elsif "#{pin.resource_type}" == "ruby" %>
-                  <%= image_tag('ruby-logo-thumbnail.png') %>                
-                  <% end %>
-                </div>  
-                
-                <div class="col-xs-9">
-                <h4>
-                    <a href="<%= pin_path(pin) %>">
-                    <%= "#{pin.title}" %>
-                    </a>           
-                </h4>
-                    <%= link_to "#{pin.url}", pin.url, html_options = {target: "_blank", class: "url"} %>
-                </div>
-                
-            </div>
-              
-            <hr/>
-            <p class="text"><%= "#{pin.text}" %></p>
-          </div>
-        </div>
-      <% end %>
+<div class="panel-body">
+  <div class="row">
+   <div class="col-md-1">
+      <%= image_tag("ruby-logo-thumbnail.png") %>
     </div>
-  <% end %>
+   <div class="col-md-3">
+     <p>
+      <%= @pin.text %>
+     </p>
+    </div>
+  </div>
+  <hr>
+  <p><b>Visit <%= @pin.title %></b>
+   <%= link_to "#{@pin.url}" %>
+  </p>
 </div>
-
 <hr/>
 <a href="/">
    <%= image_tag('rails-logo-thumbnail.png') %>

@@ -1,19 +1,21 @@
 class PinsController < ApplicationController
   
+
   def index
     @pins = Pin.all
   end
   
   def show
     @pin = Pin.find(params[:id])
-    @pins = Pin.all 
+    @users = User.joins(:pinnings).where("users.id = ? or pinnings.pin_id = ?", @pin.user_id, @pin.id)
   end
   
   def show_by_name
     @pin = Pin.find_by_slug(params[:slug])
-    @pins = Pin.all
+    @users = User.joins(:pinnings).where("users.id = ? or pinnings.pin_id = ?", @pin.user_id, @pin.id)
     render :show
   end
+
 
   def create
     @pin = Pin.create(pin_params)
@@ -27,6 +29,29 @@ class PinsController < ApplicationController
     end
   end
 
+  def edit
+    @pin = Pin.find(params[:id])
+    render :edit
+  end
+
+  def update
+    @pin = Pin.find(params[:id])
+    
+      if @pin.update_attributes(pin_params)
+        redirect_to pin_path(@pin)
+      else
+        @errors = @pin.errors
+        render :edit
+      end
+  end
+
+  def repin
+    @pin = Pin.find(params[:id])
+    @pin.pinnings.create(user: current_user)
+    @pinning = @pin.pinnings.where("user_id=?", current_user)
+    redirect_to user_path(current_user)
+  end
+  
   private
  
   def pin_params

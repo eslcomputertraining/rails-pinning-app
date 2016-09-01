@@ -32,19 +32,24 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
-group :development, :test do
-  # Call 'byebug' anywhere in the code to stop execution and get a debugger console
-  gem 'byebug', platform: :mri
-  gem 'rspec-rails'
-  gem 'database_cleaner'
+
+group :development do
+  gem 'byebug'
+  # Access an IRB console on exception pages or by using <%= console %> anywhere in the code.
+  gem 'web-console', '~> 2.0'
+  #gem 'listen', '~> 3.0.5'
+  # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
 end
 
 
-group :development do
-  # Access an IRB console on exception pages or by using <%= console %> anywhere in the code.
-  gem 'web-console'
-  gem 'listen', '~> 3.0.5'
-  # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
+group :test do
+  # Call 'byebug' anywhere in the code to stop execution and get a debugger console
+  #gem 'byebug', platform: :mri
+  gem 'shoulda-matchers'
+  gem 'database_cleaner'  
+  gem 'rspec'
+  gem 'rspec-rails' 
+  gem 'factory_girl_rails'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
@@ -52,6 +57,6 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'rails_12factor'
 gem 'spring', '~>1.3.4'
 gem 'nokogiri', '>= 1.6.8.rc3'
-gem 'paperclip'
-gem 'aws-sdk', '~> 1.6'
+gem 'paperclip', '~> 4.3', '>= 4.3.5'
 gem 'bcrypt', '~> 3.1.7'
+gem 'aws-sdk', '< 2.0'

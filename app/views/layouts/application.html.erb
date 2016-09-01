@@ -11,8 +11,11 @@
   <div class="container">
   	<div class="header">
   		<h1>Welcome 'lil Ninjas and Sensei's. Today, You will Learn Ruby on Rails.</h1>
- 		 <h3>Below is Your Training Course.</h3>
+      <% if !current_user.nil? %>
+ 		 <h3>Below is Your Training Course.
+      
 	</div>
+  <% end %>
     <%= yield %>
   </div>
 </body>

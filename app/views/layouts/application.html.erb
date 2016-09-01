@@ -16,6 +16,17 @@
       
 	</div>
   <% end %>
+  <% if session[:user_id] %>
+    <div class="pull-right">
+      <h3>
+        <%= "Hi, #{current_user.first_name}!" %>
+      </h3>
+      <button>
+        <%= link_to "LOG-OUT", logout_path(current_user), method: :delete %>
+      </button>
+
+  <% end %>
+</div>
     <%= yield %>
   </div>
 </body>

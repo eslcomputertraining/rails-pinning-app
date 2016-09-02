@@ -26,6 +26,7 @@
      <h3><button><a button name="button" type="create account" href="/users/new">Create Account</a></button></h3>
   <% end %>
 <div class="pin">
+  <% if @pinnings %>
   <% @pinnings.each_slice(3) do |row| %>
     <div class="row">
       <% row.each do |pinning| %>      
@@ -58,6 +59,7 @@
             
           </div>
         </div>
+      <% end %>
       <% end %>
     </div>
   <% end %>

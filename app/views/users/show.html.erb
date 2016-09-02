@@ -20,6 +20,50 @@
   <%= @user.password %>
 </p>
 
+<hr/>
+  <% if !session[:user_id] %>
+     <h1><button><a button name="button" type="login" href="/login">Login</a></button></h1>
+     <h3><button><a button name="button" type="create account" href="/users/new">Create Account</a></button></h3>
+  <% end %>
+<div class="pin">
+  <% @pinnings.each_slice(3) do |row| %>
+    <div class="row">
+      <% row.each do |pinning| %>      
+        <div class="pin-container col-md-4">
+          <div class="pin">
+            <div class="pin-header row">
+              
+              <div class="logo-thumbnail col-xs-3">
+                  <% if pinning.pin.slug.include?("monk") %>
+                    <%= image_tag('buddha.png') %>
+                  <% elsif pinning.pin.slug.include?("ruby") %>
+                    <%= image_tag('ruby-logo-thumbnail.png') %>
+                  <% else %>
+                    <%= image_tag('rails-logo-thumbnail.png') %>
+                  <% end %>
+                </div>  
+                
+                <div class="col-xs-9">
+                <h4>
+                  <%= link_to "#{pinning.pin.title}", pin_by_name_path(slug: pinning.pin.slug) %>
+                </h4>
+                  <%= link_to "#{pinning.pin.url.truncate(20)}", "#{pinning.pin.url.truncate(30)}", html_options = {target: "_blank", class: "url" } %>
+                                
+                </div>
+                
+            </div>
+              
+            <hr/>
+            <p class="text"><%= "#{pinning.pin.text}" %></p>
+            
+          </div>
+        </div>
+      <% end %>
+    </div>
+  <% end %>
+</div>
+
+
 <%= link_to 'Edit', edit_user_path(@user) %> |
 <%= link_to 'Home', root_path %>
-<%= link_to '| Add New Resource to Console', new_pin_path %>
+

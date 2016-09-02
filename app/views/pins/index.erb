@@ -2,6 +2,7 @@
 <hr/>
   <% if !session[:user_id] %>
      <h1><button><a button name="button" type="login" href="/login">Login</a></button></h1>
+     <h3><button><a button name="button" type="create account" href="/users/new">Create Account</a></button></h3>
   <% end %>
 <div class="pin">
   <% @pins.each_slice(3) do |row| %>
@@ -10,7 +11,9 @@
         <div class="pin-container col-md-4">
           <div class="pin">
             <div class="pin-header row">
-              
+              <%= link_to repin_path(pin), method: "post" do %>
+              <h3><button>Repin!</button></h3>
+              <% end %> 
               <div class="logo-thumbnail col-xs-3">
                   <% if pin.slug.include?("monk") %>
                     <%= image_tag('buddha.png') %>

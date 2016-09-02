@@ -10,13 +10,30 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160901164333) do
+ActiveRecord::Schema.define(version: 20160902190556) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
+  create_table "boards", force: :cascade do |t|
+    t.string   "name"
+    t.integer  "user_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["user_id"], name: "index_boards_on_user_id", using: :btree
+  end
+
   create_table "categories", force: :cascade do |t|
     t.string "name"
+  end
+
+  create_table "followers", force: :cascade do |t|
+    t.integer  "user_id"
+    t.integer  "follower_id"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
+    t.index ["follower_id"], name: "index_followers_on_follower_id", using: :btree
+    t.index ["user_id"], name: "index_followers_on_user_id", using: :btree
   end
 
   create_table "pinnings", force: :cascade do |t|
@@ -24,6 +41,8 @@ ActiveRecord::Schema.define(version: 20160901164333) do
     t.integer  "pin_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer  "board_id"
+    t.index ["board_id"], name: "index_pinnings_on_board_id", using: :btree
     t.index ["pin_id"], name: "index_pinnings_on_pin_id", using: :btree
     t.index ["user_id"], name: "index_pinnings_on_user_id", using: :btree
   end
@@ -53,6 +72,9 @@ ActiveRecord::Schema.define(version: 20160901164333) do
     t.string   "password_digest"
   end
 
+  add_foreign_key "boards", "users"
+  add_foreign_key "followers", "users"
+  add_foreign_key "followers", "users", column: "follower_id"
   add_foreign_key "pinnings", "pins"
   add_foreign_key "pinnings", "users"
   add_foreign_key "pins", "users"

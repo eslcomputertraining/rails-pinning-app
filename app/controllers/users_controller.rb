@@ -32,7 +32,8 @@ class UsersController < ApplicationController
   # GET /users/1
   # GET /users/1.json
   def show
-    @pins = current_user.pins
+    @pins = current_user.pinnings
+    @pinnings = current_user.pinnings
   end
 
   # GET /users/new

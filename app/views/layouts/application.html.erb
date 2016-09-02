@@ -11,17 +11,27 @@
   <div class="container">
   	<div class="header">
   		<h1>Welcome 'lil Ninjas and Sensei's. Today, You will Learn Ruby on Rails.</h1>
-      <% if !current_user.nil? %>
- 		 <h3>Below is Your Training Course.</h3>
-	</div>
-  <% end %>
+
   <% if session[:user_id] %>
     <div class="pull-right">
       <h1>
         <%= "Hi, #{current_user.first_name}!" %>
       </h1>
-      <button> <h3>
-        <%= link_to "LOG-OUT", logout_path(current_user), method: :delete %> </h3>
+      <button> 
+        <h3>
+
+          <%= link_to "LOG-OUT", logout_path(current_user), method: :delete %>  
+        </h3>
+      </button>
+      <button> 
+        <h3>
+          <%= link_to 'ADD NEW PIN', new_pin_path %>
+        </h3>
+      </button>
+       <button> 
+        <h3>
+          <%= link_to 'MY ACCOUNT', current_user %>
+        </h3>
       </button>
   <% end %>
 </div>

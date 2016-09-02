@@ -4,7 +4,7 @@
 <hr/>
 	<div>
 		<% if !@errors.nil? %>
-			<div class="alert alert-danger" role="alert"><p><b>Incorrect login:</b></p>
+			<div class="alert alert-danger" role="alert"><p><b>Error! Error! Wrong Login. Let's Try Again.</b></p>
 				<ul>
 					<li><%= @errors %></li>
 				</ul>
@@ -25,9 +25,10 @@
 			</div>
 			<div class="form-group">
 				<div class="col-md-2"></div>
-				<div class="col-md-4">
+				<div class="col-md-6">
 					<%= button_tag "Sign in", data: { disable_with: 'Please wait...' }, class: 'btn btn-default' %>
-					<a button name="button" type="submit" class="btn btn-danger" href="/">Cancel</a>	
+					<a button name="button" type="submit" class="btn btn-danger" href="/">Cancel</a>
+					<a button name="button" type="create account" class="btn btn-success" href="/users/new">Create Account</a>				
 			</div>
 		<% end %>
 	</div>

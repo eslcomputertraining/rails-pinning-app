@@ -1,10 +1,15 @@
 class PinsController < ApplicationController
-  
+  before_action :require_login, except: [:index, :show, :show_by_name]
 
   def index
     @pins = Pin.all
   end
   
+  # GET /pin/new
+  def new
+      @pin = Pin.new
+  end
+
   def show
     @pin = Pin.find(params[:id])
     @users = User.joins(:pinnings).where("users.id = ? or pinnings.pin_id = ?", @pin.user_id, @pin.id)
@@ -55,7 +60,7 @@ class PinsController < ApplicationController
   private
  
   def pin_params
-    params.require(:pin).permit(:title, :url, :slug, :text, :category_id)
+    params.require(:pin).permit(:title, :url, :slug, :text, :category_id, :user_id)
   end
   
 end

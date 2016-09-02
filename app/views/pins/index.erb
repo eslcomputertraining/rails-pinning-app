@@ -1,5 +1,8 @@
 
 <hr/>
+  <% if !session[:user_id] %>
+     <h1><button><a button name="button" type="login" href="/login">Login</a></button></h1>
+  <% end %>
 <div class="pin">
   <% @pins.each_slice(3) do |row| %>
     <div class="row">

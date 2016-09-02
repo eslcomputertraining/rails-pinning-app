@@ -69,7 +69,7 @@ RSpec.describe UsersController, type: :controller do
       expect(assigns(:user)).to eq(user)
     end
   
-  it "redirects to login if user is not signed in" do
+    it "redirects to login if user is not signed in" do
     user = User.create! valid_attributes
     get :show, {:id => user.to_param}, valid_session
     expect(response).to redirect_to(:login)

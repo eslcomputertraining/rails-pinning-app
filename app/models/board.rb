@@ -1,7 +1,12 @@
-class Board < ApplicationRecord
+class Board < ActiveRecord::Base
+
+validates_presence_of :name
+  
   belongs_to :user
   has_many :pinnings
   has_many :pins, through: :pinnings
-  validates_presence_of :name
+  has_many :board_pinners, dependent: :destroy
+  
+  accepts_nested_attributes_for :board_pinners
 
 end

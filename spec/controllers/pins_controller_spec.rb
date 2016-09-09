@@ -81,8 +81,8 @@ describe "GET new" do
         slug: "rails-wizard",
         text: "A fun and helpful Rails Resource",
         category_id: "2",
-	user_id: "1",
-	pinning: {board_id: @board[:id], user_id: @user[:id]} } 
+	      user_id: "1",
+	      pinning: {board_id: @board[:id], user_id: @user[:id]} } 
     end
 
     after(:each) do
@@ -263,11 +263,11 @@ describe "GET new" do
 
     it 'creates a pinning to a board on which the user is a board_pinner' do
       @pin_hash = {
-        title: @pin.title,
-	url: @pin.url,
-	slug: @pin.slug,
-	text: @pin.text,
-	category_id: @pin.category_id
+       title: @pin.title,
+	     url: @pin.url,
+	     slug: @pin.slug,
+	     text: @pin.text,
+	     category_id: @pin.category_id
       }
       board = @board_pinner.board
       @pin_hash[:pinning] = {board_id: board.id}

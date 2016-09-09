@@ -1,6 +1,6 @@
-<%= link_to repin_path(@pin), class: "btn btn-default", method: "post" do %>
-  <i class="fa fa-plus-square" aria-hidden="true"></i>
-  Repin!
+<%= link_to repin_path(@pin),  method: "post" do %>
+  <h3><button><i  aria-hidden="true"></i>
+  Repin!</button></h3>
 <% end %> 
 <div class="panel-body">
   <div class="row">
@@ -22,4 +22,6 @@
 <a href="/">
    <%= image_tag('rails-logo-thumbnail.png') %>
    Back to Home
-</a>
+</a
+
+<%# <%= render partial: "shared/repin_form", locals: {pin: @pin} %>

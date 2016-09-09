@@ -33,6 +33,21 @@
           <%= link_to 'MY ACCOUNT', current_user %>
         </h3>
       </button>
+       <button> 
+        <h3>
+          <%= link_to 'ADD NEW BOARD', new_board_path %>
+        </h3>
+      </button>
+      <button> 
+        <h3>
+          <%= link_to 'MY BOARDS', boards_path %>
+        </h3>
+      </button>
+      <button> 
+        <h3>
+          <%= link_to 'FOLLOWERS', followers_path %>
+        </h3>
+      </button>
   <% end %>
 </div>
     <%= yield %>

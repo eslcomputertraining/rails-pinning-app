@@ -46,11 +46,16 @@
     <%= f.file_field(:image_file_name) %>
   </div>
 
+<%= f.fields_for :pinning do |p| %>
+  <div class="form-group">
+    <label>Which board?</label>
+    <%= p.collection_select(:board_id, current_user.boards, :id, :name, {}, {class: "form-control"}) %>
+    <%= p.hidden_field :user_id, value: current_user.id %>    
+<% end %> 
+
   <div class="actions">
     <%= f.submit %>
   </div>
 <% end %>
 
-  <button name="button" type="submit" class="btn btn-default">Add</button>
-  <a button name="button" type="submit" class="btn btn-danger" href="/">Cancel</a>
-  <a button name="button" type="submit" class="btn btn-default" href="/">Back to Home</a>
+  <h3><a button name="button" type="submit" class="btn btn-danger" href="/">Cancel</a></h3>

@@ -14,10 +14,9 @@
   <tbody>
     <% @followers.each do |follower| %>
       <tr>
-        <td><%= follower.user %></td>
-        <td><%= follower.follower_id %></td>
-        <td><%= link_to 'Show', follower %></td>
-        <td><%= link_to 'Edit', edit_follower_path(follower) %></td>
+        <td><%= follower.user.full_name  %></td>
+      <% @user = User.find(follower.follower_id)   %>
+        <td><%= @user.full_name %></td>
         <td><%= link_to 'Destroy', follower, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
@@ -26,4 +25,4 @@
 
 <br>
 
-<%= link_to 'New Follower', new_follower_path %>
+<%= link_to 'Add New Follower', new_follower_path %>

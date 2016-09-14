@@ -1,4 +1,4 @@
-<%= form_for(@follower) do |f| %>
+<h3><%= form_for(@follower) do |f| %>
   <% if @follower.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(@follower.errors.count, "error") %> prohibited this follower from being saved:</h2>
@@ -13,7 +13,8 @@
 
   <%= f.hidden_field :user_id, value: user_to_follow.id %>
   <%= f.hidden_field :follower_id, value: current_user.id %>
-  <div class="row">
+  
+    <div class="col-md-4">
   <%= f.button :submit, class: "btn btn-primary btn-sm" do %>
     <i class="fa fa-users"></i>
     Follow!
@@ -26,6 +27,6 @@
     <%= b.name %>
   </a>
    <% end %>
-   
+<hr>
   </div>
-<% end %>
+<% end %></h3>

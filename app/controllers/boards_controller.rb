@@ -5,7 +5,7 @@ class BoardsController < ApplicationController
   # GET /boards
   # GET /boards.json
   def index
-    @boards = current_user.pinnable_boards
+    @boards = current_user.boards
   end
 
   # GET /boards/1
@@ -77,6 +77,6 @@ class BoardsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def board_params
-      params.require(:board).permit(:name, :user_name, :user_id, board_pinners_attributes: [:user_id, :board_id])
+      params.require(:board).permit(:name, :user_name, :user_id)
     end
 end
